@@ -46,7 +46,7 @@ header{
     height: 3px;
     width: auto;
     position: absolute;
-    top: 115px;
+    top: 14.7%;
     left: 0px;
     right: 0px;
     background: repeating-linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red);
@@ -81,8 +81,7 @@ header{
     color: white;
     list-style-type: none;
     font-weight: bold; 
-    margin-left: 12%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 #submenu-categorias{
@@ -91,3 +90,38 @@ header{
     padding-right: 40px;
     border-right: 3px solid #2f2f2f;
 }
+
+.dropbtn {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #2e2e2e;}

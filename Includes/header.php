@@ -26,13 +26,20 @@
 </header>
 
 <div id="submenu">
-    <
     <ul id="categorias">
-        <a href="#"><li id="submenu-categorias">OFERTAS DO DIA</li></a>
-        <li id="submenu-categorias">LANÇAMENTOS</li>
-        <li id="submenu-categorias">PC GAMER</li>
-        <li id="submenu-categorias">PAGAMENTOS</li>
-        <li id="submenu-categorias">GIFTCARD</li>
+        <div class="dropdown" style="margin-right: 20px;">
+            <button class="dropbtn"><b>DEPARTAMENTOS</b></button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <a id="link-submenu" href="#"><li id="submenu-categorias">OFERTAS DO DIA</li></a>
+        <a id="link-submenu" href="#"><li id="submenu-categorias">LANÇAMENTOS</li></a>
+        <a id="link-submenu" href="#"><li id="submenu-categorias">PC GAMER</li></a>
+        <a id="link-submenu" href="#"><li id="submenu-categorias">PAGAMENTOS</li></a>
+        <a id="link-submenu" href="#"><li id="submenu-categorias">GIFTCARD</li></a>
     <ul>
 </div>
 
