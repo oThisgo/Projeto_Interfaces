@@ -26,8 +26,9 @@
 </header>
 
 <div id="submenu">
+    <
     <ul id="categorias">
-        <li id="submenu-categorias">OFERTAS DO DIA</li>
+        <a href="#"><li id="submenu-categorias">OFERTAS DO DIA</li></a>
         <li id="submenu-categorias">LANÇAMENTOS</li>
         <li id="submenu-categorias">PC GAMER</li>
         <li id="submenu-categorias">PAGAMENTOS</li>
