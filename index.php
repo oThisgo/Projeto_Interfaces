@@ -14,7 +14,24 @@ include_once 'Includes/header.php';
 ?>
 
 <body>
-    
+
+    <?php
+        $sql = "SELECT * FROM produtos";
+        $resultado = mysqli_query($db,$sql);
+
+        if($resultado){
+
+            while($row = mysqli_fetch_array($resultado)){
+                echo '
+                <div id="bloco-produtos">
+                    <img id="img-produtos" src="Images/' . $row['imagem'] . '">
+                    <h3 id="nome-produtos">' . $row['nome'] . '</h3>
+                </div>';
+            }
+
+        }
+    ?>
+
 </body>
 
 </html>

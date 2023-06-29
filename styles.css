@@ -7,7 +7,7 @@ html{
 }
 
 body{
-    height: 100%;
+    height: fit-content;
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: absolute;
@@ -125,3 +125,10 @@ header{
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #2e2e2e;}
+
+#bloco-produtos{
+    display: block;
+    margin-top: 400px;
+    width: fit-content;
+    height: fit-content;
+}
