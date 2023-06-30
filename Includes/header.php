@@ -41,6 +41,5 @@
         <a id="link-submenu" href="#"><li id="submenu-categorias">PAGAMENTOS</li></a>
         <a id="link-submenu" href="#"><li id="submenu-categorias">GIFTCARD</li></a>
     <ul>
+    <hr id="rgb">
 </div>
-
-<hr id="rgb">
