@@ -27,7 +27,7 @@
 
 <div id="submenu">
     <ul id="categorias">
-        <div class="dropdown" style="margin-right: 20px;">
+        <div class="dropdown">
             <button class="dropbtn"><b>DEPARTAMENTOS</b></button>
             <div class="dropdown-content">
                 <a href="#">Link 1</a>

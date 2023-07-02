@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
-    <title>Document</title>
-</head>
-
-<?php 
+<?php
+include_once 'Includes/head.php';
 include_once 'Includes/db.php';
 include_once 'Includes/header.php';
 ?>
@@ -70,7 +61,7 @@ include_once 'Includes/header.php';
                         while($row1 = mysqli_fetch_array($resultado1)){
                             echo '
                             <div id="produtos">
-                                <img height=60% width=60% style="display: block; margin-right: auto; margin-left: auto;" id="img-produtos" src="Images/' . $row1['imagem'] . '">
+                                <img height=200px width=200px style="display: block; margin-right: auto; margin-left: auto;" id="img-produtos" src="Images/' . $row1['imagem'] . '">
                                 <h3 id="nome-produtos">' . $row1['nome'] . '</h3>
                                 <h3 id="preco-produtos">R$' . $row1['preco'] . '</h3>
                                 <a id="comprar-home" href="produto.php">
@@ -98,7 +89,7 @@ include_once 'Includes/header.php';
                 while ($row2 = mysqli_fetch_array($resultado2)){
                     echo '
                     <div id="produtos">
-                        <img height=60% width=60% style="display: block; margin-right: auto; margin-left: auto;" id="img-produtos" src="Images/' . $row2['imagem'] . '">
+                        <img height=200px width=200px style="display: block; margin-right: auto; margin-left: auto;" id="img-produtos" src="Images/' . $row2['imagem'] . '">
                         <h3 id="nome-produtos">' . $row2['nome'] . '</h3>
                         <h3 id="preco-produtos">R$' . $row2['preco'] . '</h3>
                         <a id="comprar-home" href="produto.php">
