@@ -23,7 +23,6 @@ header{
     right: 0px;
     top: 0px;
     background-color: #2f2f2f;
-    z-index: 2;
 }
 
 #barradepesquisa{
@@ -44,15 +43,16 @@ header{
 #rgb{
     display: block;
     height: 1px;
-    width: 123.5%;
-    position: relative;
-    left: -100px;
+    width: auto;
+    position: absolute;
+    top: 125px;
+    right: 0px;
+    left: 0px;
     background: repeating-linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red);
     background-repeat: repeat-x;
 	background-size: 400% 400%;
 	animation: RGB 3s linear infinite;
     border: 1px solid transparent;
-    z-index: 0;
     margin-bottom: -20px;
 }
 
@@ -64,19 +64,21 @@ header{
 #submenu{
     display: block;
     position: relative;
-    height: fit-content;
+    height: 55px;
+    text-align: center;
     top: 80px;
     width: auto;
     left: 0px;
     right: 0px;
     background-color: #1f1f1f;
-    z-index: 1;
 }
 
 #categorias{
     display: inline-block;
+    width: 100%;
     position: relative;
-    left: auto;
+    left: 0px;
+    right: 0px;
     top: -4px;
     height: fit-content;
     width: fit-content;
@@ -87,6 +89,8 @@ header{
 
 #link-submenu{
     color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #link-submenu:hover{
@@ -95,22 +99,19 @@ header{
 
 #submenu-categorias{
     display: inline-block;
-    margin-left: 50px;
-    padding-right: 40px;
-    border-right: 3px solid #2f2f2f;
 }
 
 .dropbtn {
     background-color: #1f1f1f;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     border: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
-    z-index: 2;
 }
 
 .dropdown-content {
@@ -119,7 +120,6 @@ header{
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 2;
 }
 
 .dropdown-content a {
@@ -135,9 +135,144 @@ header{
 
 .dropdown:hover .dropbtn {color: #00930f;}
 
-#bloco-produtos{
+.carousel {
+    position: relative;
+    margin-top: 125px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
     display: block;
-    margin-top: 400px;
-    width: fit-content;
+    object-fit: cover;
+}
+
+.carousel-control {
+    background: white;
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: #00930f;
+    color: white;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 50px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #00930f;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+#blocos-produtos{
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.secao {
+    display: block;
+    color: white;
+    padding: 10px;
+    background-color: #00930f;
+}
+
+#produtos{
+    display: block;
     height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    background-color: white;
+    border-radius: 25px;
 }

@@ -35,11 +35,21 @@
                 <a href="#">Link 3</a>
             </div>
         </div>
-        <a id="link-submenu" href="#"><li id="submenu-categorias">OFERTAS DO DIA</li></a>
-        <a id="link-submenu" href="#"><li id="submenu-categorias">LANÇAMENTOS</li></a>
-        <a id="link-submenu" href="#"><li id="submenu-categorias">PC GAMER</li></a>
-        <a id="link-submenu" href="#"><li id="submenu-categorias">PAGAMENTOS</li></a>
-        <a id="link-submenu" href="#"><li id="submenu-categorias">GIFTCARD</li></a>
+        <?php
+
+            $sql = "SELECT * FROM secoes";
+            $resultado = mysqli_query($db,$sql);
+
+            if($resultado){
+                while ($row = mysqli_fetch_array($resultado)) {
+                    echo'
+                    <a id="link-submenu" href="#'.$row['secao'].'">
+                        <li id="submenu-categorias">'.$row['secao'].'</li>
+                    </a>';
+                }
+            }
+
+        ?>   
     <ul>
-    <hr id="rgb">
 </div>
+<hr id="rgb">
