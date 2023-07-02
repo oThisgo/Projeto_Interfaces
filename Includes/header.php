@@ -43,7 +43,7 @@
             if($resultado){
                 while ($row = mysqli_fetch_array($resultado)) {
                     echo'
-                    <a id="link-submenu" href="#'.$row['secao'].'">
+                    <a id="link-submenu" href="http://localhost/Projeto_Interfaces/index.php/#'.$row['secao'].'">
                         <li id="submenu-categorias">'.$row['secao'].'</li>
                     </a>';
                 }
