@@ -3,6 +3,10 @@
 <?php
 include_once 'Includes/head.php';
 include_once 'Includes/db.php';
+
+$id = $_REQUEST['id'];
+$sql = "SELECT * FROM produtos WHERE ProdutoID =" . $id;
+$resultado = mysqli_query($db,$sql);
 ?>
 
 <header>
@@ -39,36 +43,42 @@ include_once 'Includes/db.php';
 </header>
 
 <body>
-
-    <div class = "card">
-        <div class = "product-imgs">
-          <div class = "img-display">
-            <div class = "img-showcase">
-              <img src = "Images/ps5.jpg">
-              <img src = "Images/monsterjava.png">
-              <img src = "shoes_images/shoe_3.jpg">
+<div style="display: block; margin-top: 100px; padding-top: 30px; padding-left: 50px; height: fit-content; width: 95%; margin-right: auto; margin-left: auto; background-color: white; border-radius: 25px;"id="box">
+  <?php 
+    while ($row = mysqli_fetch_array($resultado)) {
+      echo '
+      <h3 style="display: block; float: left; margin-bottom: -50px;" id="product-title">'.$row['nome'].'</h3>
+      <div style="margin-left: 10px;" class="card">
+          <div class = "product-imgs">
+            <div class = "img-display">
+              <div stle="border: 1px solid grey;" class = "img-showcase">
+                <img src = "Images/'.$row['imagem'].'">
+                <img src = "Images/'.$row['imagem2'].'">
+                <img src = "Images/'.$row['imagem3'].'">
+              </div>
+            </div>
+            <div class = "img-select">
+              <div class = "img-item">
+                <a href = "#" data-id = "1">
+                  <img style="border: 1px solid grey; border-radius: 10px;" height= 80px width= 80px src = "Images/'.$row['imagem'].'">
+                </a>
+              </div>
+              <div class = "img-item">
+                <a href = "#" data-id = "2">
+                  <img style="border: 1px solid grey; border-radius: 10px;" height= 80px width= 80px src = "Images/'.$row['imagem2'].'">
+                </a>
+              </div>
+              <div class = "img-item">
+                <a href = "#" data-id = "3">
+                  <img style="border: 1px solid grey; border-radius: 10px;" height= 80px width= 80px src = "Images/'.$row['imagem3'].'">
+                </a>
+              </div>
             </div>
           </div>
-          <div class = "img-select">
-            <div class = "img-item">
-              <a href = "#" data-id = "1">
-                <img height= 80px width= 80px src = "Images/ps5.jpg">
-              </a>
-            </div>
-            <div class = "img-item">
-              <a href = "#" data-id = "2">
-                <img height= 80px width= 80px src = "Images/monsterjava.jpg">
-              </a>
-            </div>
-            <div class = "img-item">
-              <a href = "#" data-id = "3">
-                <img height= 80px width= 80px src = "shoes_images/shoe_3.jpg">
-              </a>
-            </div>
-          </div>
-        </div>
-    </div>
-
+      </div>';
+    }
+  ?>
+</div>
 <script src="animation.js"></script>
 
 </body>

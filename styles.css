@@ -321,6 +321,7 @@ header{
 .img-showcase{
     display: flex;
     transition: all 0.5s ease;
+    border: 1px solid grey;
 }
 .img-showcase img{
     min-width: 100%;
@@ -345,8 +346,6 @@ header{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1.5rem;
-        margin-top: 150px;
-        margin-left: 50px;
     }
     .product-imgs{
         display: flex;
