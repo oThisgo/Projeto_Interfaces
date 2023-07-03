@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 02-Jul-2023 às 06:55
+-- Tempo de geração: 03-Jul-2023 às 02:25
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 7.3.27
 
@@ -57,6 +57,8 @@ CREATE TABLE `produtos` (
   `nome` varchar(255) NOT NULL,
   `preco` float NOT NULL,
   `imagem` varchar(255) NOT NULL,
+  `imagem2` varchar(255) NOT NULL,
+  `imagem3` varchar(255) NOT NULL,
   `descricao` longtext NOT NULL,
   `secao` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -65,8 +67,9 @@ CREATE TABLE `produtos` (
 -- Extraindo dados da tabela `produtos`
 --
 
-INSERT INTO `produtos` (`ProdutoID`, `nome`, `preco`, `imagem`, `descricao`, `secao`) VALUES
-(1, 'Egernético Monster Java Programação', 158325, 'monsterjava.png', 'COFFEE DONE THE MONSTER WAY: No foam, extra hot, half-caf, no-whip, soy latte. Enough of the coffee house BS already. It’s time to get out of the line and step up to what’s next. Coffee done the Monster way, wide open, with a take no prisoners attitude and the experience and know-how to back it up KILLER FLAVOR: Mean Bean Java Monster premium coffee and cream, brewed up with a killer Vanilla Bean flavor, supercharged with the Monster energy blend and 188mg of caffeine per can. Monster Java Mean Bean, Coffee + Energy Drink, 15 Fl Oz.', 'OFERTAS');
+INSERT INTO `produtos` (`ProdutoID`, `nome`, `preco`, `imagem`, `imagem2`, `imagem3`, `descricao`, `secao`) VALUES
+(1, 'Egernético Monster Java Programação', 158325, 'monsterjava.jpg', 'monsterjava2.jpg', 'monsterjava3.jpg', 'COFFEE DONE THE MONSTER WAY: No foam, extra hot, half-caf, no-whip, soy latte. Enough of the coffee house BS already. It’s time to get out of the line and step up to what’s next. Coffee done the Monster way, wide open, with a take no prisoners attitude and the experience and know-how to back it up KILLER FLAVOR: Mean Bean Java Monster premium coffee and cream, brewed up with a killer Vanilla Bean flavor, supercharged with the Monster energy blend and 188mg of caffeine per can. Monster Java Mean Bean, Coffee + Energy Drink, 15 Fl Oz.', 'OFERTAS'),
+(2, 'Console de videogame Sony Playstation 5', 4999.99, 'ps5.jpg', 'ps52.jpg', 'ps53.jpg', 'Play Has No Limits Jogar Não Tem Limites PlayStation5 O console PS5 oferece novas possibilidades de jogabilidade que você nunca imaginou. Reproduza jogos para PS5 e PS4 em Blu-ray Disc. Além disso, você também pode baixar jogos digitais para PS5 e PS4 pela PlayStation Store. Experimente o carregamento extremamente rápido do SSD de ultra-velocidade, uma imersão mais profunda com suporte à resposta tátil, gatilhos adaptáveis e áudio 3D. Além de uma geração totalmente nova de jogos incríveis PlayStation.\r\n\r\nNa velocidade da luz Aproveite o carregamento extremamente rápido com o SSD de altíssima velocidade, uma imersão mais profunda com suporte a feedback tátil, gatilhos adaptáveis e áudio em 3D*, além de uma geração inédita de jogos incríveis para PlayStation. *Áudio 3D via alto-falantes integrados da TV ou fones de ouvido estéreo analógicos/USB. Configuração necessária.\r\nJogos deslumbrantes Maravilhe-se com os gráficos incríveis e experimente os recursos do novo PS5. Imersão de tirar o fôlego Descubra uma experiência de jogos ainda mais profunda com a ajuda da resposta tátil, dos gatilhos adaptáveis e da tecnologia de áudio 3D.\r\n\r\nExplore ambientes realistas com o Ray tracing. O Ray tracing traz novos níveis de realismo com sombras naturais e reflexos no suporte a jogos do PS5. Veja cores vibrantes. Com uma TV HDR, os jogos compatíveis do PS5 exibem uma incrível variedade de cores.\r\n\r\nMovimente-se pelos mundos dos jogos com um realismo incrível. Jogabilidade com taxa de quadros uniforme e fluída de até 120 fps em jogos compatíveis, com suporte para saída de 120 Hz em telas 4K. Experimente gráficos 4K nítidos. Com jogos compatíveis do PS5, cada pequeno detalhe ganha vida em uma TV 4K. Jogue mais de 4 mil jogos do PS4 em seu console PS5. Viva a nostalgia de jogar seus títulos favoritos do PS4 e do PS VR com a Retrocompatibilidade.', 'LANÇAMENTOS');
 
 -- --------------------------------------------------------
 
@@ -156,7 +159,7 @@ ALTER TABLE `noticias`
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `ProdutoID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ProdutoID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `secoes`
