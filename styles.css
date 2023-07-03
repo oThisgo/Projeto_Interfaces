@@ -311,30 +311,49 @@ header{
 #comprar-home:hover{
     background-color: #007a0c;
 }
-  
-p { 
-    font-size: 14pt;
+
+.img-display{
+    display: inline-block;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
 }
-  
-#image-gallery { 
-    width: 600px; 
-    margin: 0 auto;
+.img-showcase{
+    display: flex;
+    transition: all 0.5s ease;
 }
-  
-#current-image { 
-    width: 100%;
-} 
-  
-#image-thumbs { 
-    display: flex; 
-    justify-content: center; 
-    margin-top: 20px;
+.img-showcase img{
+    min-width: 100%;
+}
+.img-select{
+    display: flex;
+}
+.img-item{
+    margin: 0.3rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+.img-item:hover{
+    opacity: 0.8;
 }
 
-.thumb { 
-    width: 80px; 
-    height: 80px; 
-    object-fit: cover; 
-    margin-right: 10px; 
-    cursor: pointer;
+@media screen and (min-width: 992px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+        margin-top: 150px;
+        margin-left: 50px;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
 }

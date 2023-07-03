@@ -35,41 +35,12 @@ include_once 'Includes/db.php';
             <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
         </svg>
     </a>
-
 </header>
 
 <body>
 
-    <div class = "card">
-        <div class = "product-imgs">
-          <div class = "img-display">
-            <div class = "img-showcase">
-              <img src = "Images/ps5.jpg">
-              <img src = "Images/monsterjava.png">
-              <img src = "shoes_images/shoe_3.jpg">
-            </div>
-          </div>
-          <div class = "img-select">
-            <div class = "img-item">
-              <a href = "#" data-id = "1">
-                <img height= 80px width= 80px src = "Images/ps5.jpg">
-              </a>
-            </div>
-            <div class = "img-item">
-              <a href = "#" data-id = "2">
-                <img height= 80px width= 80px src = "Images/monsterjava.jpg">
-              </a>
-            </div>
-            <div class = "img-item">
-              <a href = "#" data-id = "3">
-                <img height= 80px width= 80px src = "shoes_images/shoe_3.jpg">
-              </a>
-            </div>
-          </div>
-        </div>
-    </div>
 
-<script src="animation.js"></script>
 
 </body>
+
 </html>
