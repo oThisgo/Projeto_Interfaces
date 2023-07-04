@@ -47,11 +47,11 @@ $resultado = mysqli_query($db,$sql);
   <?php 
     while ($row = mysqli_fetch_array($resultado)) {
       echo '
-      <h3 style="display: block; float: left; margin-bottom: -50px;" id="product-title">'.$row['nome'].'</h3>
+      <h3 style="display: block; margin-bottom: 50px;" id="product-title">'.$row['nome'].'</h3>
       <div style="margin-left: 10px;" class="card">
           <div class = "product-imgs">
             <div class = "img-display">
-              <div stle="border: 1px solid grey;" class = "img-showcase">
+              <div class = "img-showcase">
                 <img src = "Images/'.$row['imagem'].'">
                 <img src = "Images/'.$row['imagem2'].'">
                 <img src = "Images/'.$row['imagem3'].'">
