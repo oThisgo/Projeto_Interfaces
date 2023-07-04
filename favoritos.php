@@ -6,9 +6,13 @@ include_once 'Includes/db.php';
 ?>
 
 <header>
-    <svg style="cursor: pointer; display: inline-block; position: relative; top: 21%; left:3%;" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#00930f" class="bi bi-list" viewBox="0 0 16 16">
+    <svg style="cursor: pointer; display: inline-block; position: relative; left:3%;" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#00930f" class="bi bi-list" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
     </svg>
+
+    <a href="index.php">
+      <img style="display: inline-block; margin-top: 20px; margin-left: 100px;" height=60% src="Images/LOGO.png">
+    </a>
 
     <div id="barradepesquisa">
         <input type="text" id="busca"/>

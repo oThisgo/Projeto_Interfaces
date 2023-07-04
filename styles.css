@@ -103,6 +103,7 @@ header{
 
 #submenu-categorias{
     display: inline-block;
+    margin-right: 50px;
 }
 
 .dropbtn {
@@ -114,8 +115,9 @@ header{
 }
 
 .dropdown {
-    position: relative;
+    position: absolute;
     display: inline-block;
+    left: -550px;
 }
 
 .dropdown-content {
@@ -312,11 +314,33 @@ header{
     background-color: #007a0c;
 }
 
+#comprar-produto{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #00930f;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 40px;
+    border-radius: 5px;
+    margin-left: 20%;
+    position: relative;
+    top: -300px;
+    color: white;
+    font-weight: bold;
+    border-right: 3px solid #007a0c;
+}
+
+#comprar-produto:hover{
+    background-color: #007a0c;
+}
+
 .img-display{
     display: inline-block;
     overflow: hidden;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
 }
 .img-showcase{
     display: flex;
