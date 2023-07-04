@@ -109,4 +109,8 @@
 
 </body>
 
+<?php
+include_once 'Includes/footer.php';
+?>
+
 </html>

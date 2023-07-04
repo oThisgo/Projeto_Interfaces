@@ -16,7 +16,7 @@
       <img style="display: inline-block; margin-top: 20px; margin-left: 100px;" height=60% src="Images/LOGO.png">
     </a>
 
-    <form action="pesquisa.php?search=" id="barradepesquisa">
+    <form method="get" action="pesquisa.php" id="barradepesquisa">
         <input type="text" name="search" id="busca"/>
         <svg style="cursor: pointer; display: inline-block; position: absolute; left: 85%; top: 10%; height: fit-content; width: fit-content; background-color: white; border-left: 1px solid grey; padding: 8px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00930f" class="bi bi-search" viewBox="0 0 16 16">
             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
