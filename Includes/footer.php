@@ -52,7 +52,7 @@ footer{
 
 #footer-line{
     display: block;
-    height: 2px;
+    height: 1px;
     background-color: #00930f;
     border: 1px solid transparent;
 }
