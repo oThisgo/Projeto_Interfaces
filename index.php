@@ -106,7 +106,7 @@
         ?>
 
     </div>
-
+<script src="animation.js"></script>
 </body>
 
 <?php
