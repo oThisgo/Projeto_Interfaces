@@ -47,12 +47,12 @@
 </header>
 
 <body>
-  <form style="display: block; border-radius: 25px; margin-top: 130px; margin-bottom: 50px; width: fit-content; height: fit-content; background-color: white; padding: 100px; margin-right: auto; margin-left: auto;" action="perfil.php" id="container">
+  <form style="display: block; border-radius: 25px; margin-top: 130px; margin-bottom: 50px; width: 800px; height: fit-content; background-color: white; padding: 100px; margin-right: auto; margin-left: auto;" action="perfil.php" id="container">
     <fieldset id="field">
       <div id="titulo">
         <h1 style="text-align: center; margin-top: -30px; margin-bottom: 50px; color: #00930f">CRIAR CONTA</h1>
       </div>
-      <div id="conta">
+      <div style="color: #grey;" id="conta">
         <label id="contatype">Tipo de conta</label>
         <div style="margin-bottom: 30px;"id="tipoConta">
             <input type="radio" name="tipopessoa" value="física" checked><label>Pessoa Física</label>
@@ -60,19 +60,19 @@
         </div>
       </div>
       <div id="nome_cpf">
-        <input style="padding: 10px; margin-right: 10px; margin-bottom: 10px; border-radius: 15px;" type="text" name="nome" id="nome" placeholder="Nome completo">
-        <input style="padding: 10px; border-radius: 15px;" type="text" name="CPF" id="CPF" placeholder="CPF">
+        <input style="width: 47.96%; border: 3px solid #9e9e9e; padding: 10px; margin-right: 10px; margin-bottom: 10px; border-radius: 15px;" type="text" name="nome" id="nome" placeholder="Nome completo">
+        <input style="width: 47.96%; border: 3px solid #9e9e9e; padding: 10px; border-radius: 15px;" type="text" name="CPF" id="CPF" placeholder="CPF">
       </div>
       <div id="data_telefone">
-        <input style="width: 268px; padding: 10px; margin-right: 10px; margin-bottom: 10px; border-radius: 15px;" type="date" nome="nascimento" id="nascimento" placeholder="Data de nascimento">
-        <input style="padding: 10px; margin-right: 10px; margin-bottom: 10px; border-radius: 15px;" type="number" name="celular" id="celular" placeholder="Telefone celular">
+        <input style="width: 47.96%; color: #9e9e9e; border: 3px solid #9e9e9e; padding: 10px; margin-right: 10px; margin-bottom: 10px; border-radius: 15px;" type="date" nome="nascimento" id="nascimento" placeholder="Data de nascimento">
+        <input style="width: 47.96%; border: 3px solid #9e9e9e; padding: 10px; margin-right: 10px; margin-bottom: 10px; border-radius: 15px;" type="number" name="celular" id="celular" placeholder="Telefone celular">
       </div>
       <div id="emaildiv">
-        <input style="width: 550px; padding: 10px; margin-right: 10px; margin-bottom: 10px; border-radius: 15px;" type="email" name="email" id="email" placeholder="E-mail">
+        <input style="width: 98.2%; padding: 10px; margin-right: 10px; border: 3px solid #9e9e9e; margin-bottom: 10px; border-radius: 15px;" type="email" name="email" id="email" placeholder="E-mail">
       </div>
       <div id="senha_confsenha">
-        <input style="padding: 10px; margin-right: 10px; margin-bottom: 10px; border-radius: 15px;" type="password" name="senha" id="senha" placeholder="Criar senha">
-        <input style="padding: 10px; margin-right: 10px; margin-bottom: 10px; border-radius: 15px;" type="password" name="confSenha" id="confSenha" placeholder="Confirmar senha">
+        <input style="width: 47.96%; border: 3px solid #9e9e9e; padding: 10px; margin-right: 10px; margin-bottom: 10px; border-radius: 15px;" type="password" name="senha" id="senha" placeholder="Criar senha">
+        <input style="width: 47.96%; border: 3px solid #9e9e9e; padding: 10px; margin-right: 10px; margin-bottom: 10px; border-radius: 15px;" type="password" name="confSenha" id="confSenha" placeholder="Confirmar senha">
       </div>
       <div id="politicas">
         <input type="checkbox" name="politicas"> Li e estou de acordo com as poíticas da empresa e políticas de privacidade

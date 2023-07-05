@@ -48,7 +48,7 @@ include_once 'Includes/db.php';
     </svg>CARRINHO
 </h3>
 <div style="display: block; width: 92%; height: fit-content; margin-left: auto; margin-right: auto;" id="bloco-carrinho">
-    <div style="display: inline-block; padding-top: 5px; margin-top: 30px; padding-left: 5px; height: fit-content; width: 48%; margin-right: 50px; margin-left: auto; background-color: white; border-radius: 25px; padding-bottom: 30px; margin-bottom: 30px;" id="box">
+    <div style="display: inline-block; padding-top: 5px; margin-top: 30px; padding-left: 5px; height: 300px; width: 45%; margin-right: 50px; margin-left: auto; background-color: white; border-radius: 25px; padding-bottom: 30px; margin-bottom: 30px;" id="box">
         <fieldset style="border: 1px solid transparent;">
             <legend>
                 <svg style="display: inline-block; margin-right: 10px; position:relative; top:6px;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="CurrentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
@@ -67,7 +67,7 @@ include_once 'Includes/db.php';
             <a style="display: block; color: #00930f; text-decoration: none; float: right; position: relative; top: 80px; right: 30px;" href="#">Selecionar outro</a>
         </fieldset>
     </div>
-    <div style="display: inline-block; float:right; padding-top: 5px; margin-top: 30px; padding-left: 5px; height: fit-content; width: 48%; margin-right: auto; margin-left: auto; background-color: white; border-radius: 25px; padding-bottom: 30px; margin-bottom: 30px;" id="box">
+    <div style="display: inline-block; float:right; padding-top: 5px; margin-top: 30px; padding-left: 5px; height: 300px; width: 45%; margin-right: auto; margin-left: auto; background-color: white; border-radius: 25px; padding-bottom: 30px; margin-bottom: 30px;" id="box">
         <fieldset style="border: 1px solid transparent;">
             <legend>
             <svg style="display: inline-block; margin-right: 10px; position:relative; top:6px;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">

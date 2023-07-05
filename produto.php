@@ -50,7 +50,7 @@ $resultado = mysqli_query($db,$sql);
   <?php 
     while ($row = mysqli_fetch_array($resultado)) {
       echo '
-      <h3 style="display: block; position: relative; top: 50px; text-align: center; font-size: 28px;" id="product-title">'.$row['nome'].'</h3>
+      <h3 style="display: block; position: relative; margin-left: 650px; top: 50px; height: fit-content; width: fit-content; text-align: center; font-size: 28px;" id="product-title">'.$row['nome'].'</h3>
       <div style="display: inline-block; margin-left: 10px;" class="card">
           <div class = "product-imgs">
             <div class = "img-display">
@@ -80,7 +80,7 @@ $resultado = mysqli_query($db,$sql);
           </div>
       </div>
       <h1 style="display: inline-block; color: #00930f; margin-left: 140px; position: relative; top: -300px;">R$ '.$row['preco'].'</h1>
-      <a id="comprar-produto" href="carrinho.php">
+      <a style="display: block; width: fit-content; position: relative; left: 350px;" id="comprar-produto" href="carrinho.php">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-cart-fill" viewBox="0 0 16 16">
           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
         </svg>
@@ -97,7 +97,7 @@ $resultado = mysqli_query($db,$sql);
       </svg>
       DESCRIÇÃO DO PRODUTO
       </h3>
-      <p style="display: block; text-align: justify; margin-right: 350px;">
+      <p style="display: block; text-align: justify; margin-right: 300px;">
         '.$row['descricao'].'
       </p>';
     }

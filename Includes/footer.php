@@ -2,7 +2,8 @@
     <hr id="footer-line">
     <ul id="cat-footer">
         <li id="topics-footer">
-            <b>Atendimento</b>
+            <b style="text-align: left;" >Atendimento</b>
+            
         </li>
 
         <li id="topics-footer">
@@ -17,28 +18,6 @@
             <b>Pagamento</b>
         </li>
     </ul>
-
-    <div id="content1">
-        <b>Horário de atendimento:</b>
-        <p>09:00 - 19:00</p>
-        <p>(Segunda a Sexta)</p>
-        <br>
-        <b>Endereço</b>
-        <p>Rua Coronel Genuíno, 130</p>
-        <p>Porto Alegre, RS</p>
-    </div>
-
-    <div id="content2">
-        <a href="perfil.php" style="text-decoration: none; color: #00930f;">Minha conta</a>
-    </div>
-
-    <div id="content3">
-        <img src="Images/app.png" width="200px" height="150px">
-    </div>
-
-    <div id="content4">
-        <img src="Images/cartoes.png" width="200px" height="150px">
-    </div>
 <footer>
 
 <style>
@@ -71,6 +50,7 @@ footer{
 
 #topics-footer{
     display: inline-block;
+    float: left;
     width: 300px;
     height: fit-content;
 }

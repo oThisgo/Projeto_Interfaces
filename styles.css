@@ -44,10 +44,10 @@ header{
 
 #rgb{
     display: block;
-    height: 1px;
+    height: 2px;
     width: auto;
     position: absolute;
-    top: 125px;
+    top: 115px;
     right: 0px;
     left: 0px;
     background: repeating-linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red);
@@ -67,7 +67,7 @@ header{
 #submenu{
     display: block;
     position: relative;
-    height: 55px;
+    height: 45px;
     text-align: center;
     top: 80px;
     width: auto;
@@ -112,12 +112,13 @@ header{
     font-size: 18px;
     border: none;
     font-family: Arial, Helvetica, sans-serif;
+
+
 }
 
 .dropdown {
-    position: absolute;
     display: inline-block;
-    left: -550px;
+    float: left;
 }
 
 .dropdown-content {
