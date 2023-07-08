@@ -60,19 +60,19 @@
         </div>
       </div>
       <div id="nome_cpf">
-        <input style="width: 47.96%; border: 3px solid #9e9e9e; padding: 10px; margin-right: 10px; margin-bottom: 10px; border-radius: 15px;" type="text" name="nome" id="nome" placeholder="Nome completo">
-        <input style="width: 47.96%; border: 3px solid #9e9e9e; padding: 10px; border-radius: 15px;" type="text" name="CPF" id="CPF" placeholder="CPF">
+        <input style="width: 260px; border: 3px solid #9e9e9e; padding: 10px; margin-right: 10px; margin-bottom: 10px; border-radius: 15px;" type="text" name="nome" id="nome" placeholder="Nome completo">
+        <input style="width: 260px; border: 3px solid #9e9e9e; padding: 10px; border-radius: 15px;" type="text" name="CPF" id="CPF" placeholder="CPF">
       </div>
       <div id="data_telefone">
-        <input style="width: 47.96%; color: #9e9e9e; border: 3px solid #9e9e9e; padding: 10px; margin-right: 10px; margin-bottom: 10px; border-radius: 15px;" type="date" nome="nascimento" id="nascimento" placeholder="Data de nascimento">
-        <input style="width: 47.96%; border: 3px solid #9e9e9e; padding: 10px; margin-right: 10px; margin-bottom: 10px; border-radius: 15px;" type="number" name="celular" id="celular" placeholder="Telefone celular">
+        <input style="width: 260px; color: #9e9e9e; border: 3px solid #9e9e9e; padding: 10px; margin-right: 10px; margin-bottom: 10px; border-radius: 15px;" type="date" nome="nascimento" id="nascimento" placeholder="Data de nascimento">
+        <input style="width: 260px; border: 3px solid #9e9e9e; padding: 10px; margin-right: 10px; margin-bottom: 10px; border-radius: 15px;" type="number" name="celular" id="celular" placeholder="Telefone celular">
       </div>
       <div id="emaildiv">
-        <input style="width: 98.2%; padding: 10px; margin-right: 10px; border: 3px solid #9e9e9e; margin-bottom: 10px; border-radius: 15px;" type="email" name="email" id="email" placeholder="E-mail">
+        <input style="width: 535px; padding: 10px; margin-right: 10px; border: 3px solid #9e9e9e; margin-bottom: 10px; border-radius: 15px;" type="email" name="email" id="email" placeholder="E-mail">
       </div>
       <div id="senha_confsenha">
-        <input style="width: 47.96%; border: 3px solid #9e9e9e; padding: 10px; margin-right: 10px; margin-bottom: 10px; border-radius: 15px;" type="password" name="senha" id="senha" placeholder="Criar senha">
-        <input style="width: 47.96%; border: 3px solid #9e9e9e; padding: 10px; margin-right: 10px; margin-bottom: 10px; border-radius: 15px;" type="password" name="confSenha" id="confSenha" placeholder="Confirmar senha">
+        <input style="width: 260px; border: 3px solid #9e9e9e; padding: 10px; margin-right: 10px; margin-bottom: 10px; border-radius: 15px;" type="password" name="senha" id="senha" placeholder="Criar senha">
+        <input style="width: 260px; border: 3px solid #9e9e9e; padding: 10px; margin-right: 10px; margin-bottom: 10px; border-radius: 15px;" type="password" name="confSenha" id="confSenha" placeholder="Confirmar senha">
       </div>
       <div id="politicas">
         <input type="checkbox" name="politicas"> Li e estou de acordo com as poíticas da empresa e políticas de privacidade

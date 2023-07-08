@@ -45,7 +45,7 @@
 
 <div id="submenu">
     <ul id="categorias">
-        <div class="dropdown">
+        <div style="position: absolute; left: -550px;" class="dropdown">
             <button class="dropbtn"><b>DEPARTAMENTOS</b></button>
             <div class="dropdown-content">
                 <?php

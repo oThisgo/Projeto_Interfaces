@@ -112,13 +112,10 @@ header{
     font-size: 18px;
     border: none;
     font-family: Arial, Helvetica, sans-serif;
-
-
 }
 
 .dropdown {
     display: inline-block;
-    float: left;
 }
 
 .dropdown-content {
@@ -325,9 +322,7 @@ header{
     padding-left: 50px;
     padding-right: 40px;
     border-radius: 5px;
-    margin-left: 20%;
     position: relative;
-    top: -300px;
     color: white;
     font-weight: bold;
     border-right: 3px solid #007a0c;

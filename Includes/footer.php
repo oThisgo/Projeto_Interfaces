@@ -3,19 +3,25 @@
     <ul id="cat-footer">
         <li id="topics-footer">
             <b style="text-align: left;" >Atendimento</b>
-            
+            <br>
+            <p>09:00 às 19:00</p>
+            <p>Segunda à Sábado</a>
         </li>
 
         <li id="topics-footer">
             <b>Cliente</b>
+            <br>
+            <a style="text-decoration: none;"  href="perfil.php">Minha conta</a>
         </li>
 
         <li id="topics-footer">
             <b>Baixe nosso app</b>
+            <img height="150px" width="200px"src="Images/app.png">
         </li>
 
         <li id="topics-footer">
             <b>Pagamento</b>
+            <img height="180px" width="200px"src="Images/cartoes.png">
         </li>
     </ul>
 <footer>
@@ -23,10 +29,11 @@
 <style>
 footer{
     display: block;
-    height: fit-content;
+    height: 300px;
     width: 100%;
     background-color: #0f0f0f;
-    padding-bottom: 20px
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 #footer-line{
